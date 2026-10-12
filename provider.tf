@@ -8,7 +8,7 @@ provider "aws" {
   skip_metadata_api_check     = true
 
   endpoints {
-    ec2 = "http://host.docker.internal:4566"
-    elbv2 = "http://host.docker.internal:4566"
+    ec2 = "http://172.17.0.1:4566"
+    elbv2 = "http://172.17.0.1:4566"
   }
 }
